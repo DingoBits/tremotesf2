@@ -28,7 +28,7 @@ namespace tremotesf
         case Qt::DecorationRole:
             switch (item.filter) {
             case TorrentsProxyModel::All:
-                return QApplication::style()->standardIcon(QStyle::SP_DirIcon);
+                return QIcon(desktoputils::statusIconPath(desktoputils::DirectoryIcon));
             case TorrentsProxyModel::Active:
                 return QIcon(desktoputils::statusIconPath(desktoputils::ActiveIcon));
             case TorrentsProxyModel::Downloading:

@@ -20,6 +20,7 @@ namespace tremotesf
         {
             ActiveIcon,
             CheckingIcon,
+            DirectoryIcon,
             DownloadingIcon,
             ErroredIcon,
             PausedIcon,

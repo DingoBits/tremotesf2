@@ -29,6 +29,8 @@ namespace tremotesf::desktoputils
             return ":/active.png"_l1;
         case CheckingIcon:
             return ":/checking.png"_l1;
+        case DirectoryIcon:
+            return ":/directory.png"_l1;
         case DownloadingIcon:
             return ":/downloading.png"_l1;
         case ErroredIcon:

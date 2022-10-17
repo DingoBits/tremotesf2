@@ -15,6 +15,8 @@
 #include "tremotesf/rpc/trpc.h"
 #include "torrentsproxymodel.h"
 
+#include "tremotesf/desktoputils.h"
+
 namespace tremotesf
 {
     QVariant DownloadDirectoriesModel::data(const QModelIndex& index, int role) const
@@ -27,7 +29,7 @@ namespace tremotesf
         case DirectoryRole:
             return item.directory;
         case Qt::DecorationRole:
-            return QApplication::style()->standardIcon(QStyle::SP_DirIcon);
+            return QIcon(desktoputils::statusIconPath(desktoputils::DirectoryIcon));
         case Qt::DisplayRole:
         case Qt::ToolTipRole:
             if (item.directory.isEmpty()) {
